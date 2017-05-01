@@ -1,0 +1,4 @@
+<resources>
+    <!-- メッセージ定義（LM:Localizable Message） -->
+    <string name="LM0001">こんにちは</string>
+</resources>

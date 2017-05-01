@@ -1,0 +1,6 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/guda01" android:duration="200" />
+    <item android:drawable="@drawable/guda02" android:duration="150" />
+    <item android:drawable="@drawable/guda03" android:duration="100" />
+    <item android:drawable="@drawable/guda04" android:duration="200" />
+</animation-list>

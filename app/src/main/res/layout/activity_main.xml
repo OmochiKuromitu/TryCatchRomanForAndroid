@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <jp.co.fake.TryCatchRoman.domain.usecase.camera.AutoFitTextureView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/previewImage"
+            app:srcCompat="@drawable/haikei"
+            android:scaleType="fitXY" />
+
+        <jp.co.fake.TryCatchRoman.util.CustomImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/chara1_image" />
+
+        <jp.co.fake.TryCatchRoman.util.CustomImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/chara2_image" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/camera_button"
+                android:layout_weight="1"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_width="100dp"
+                android:background="@drawable/gudaicon" />
+
+            <Button
+                android:id="@+id/camera_button2"
+                android:layout_weight="1"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_width="100dp"
+                android:background="@drawable/romaicon" />
+
+            <Button
+                android:id="@+id/camera_button3"
+                android:layout_weight="1"
+                android:layout_height="@android:dimen/notification_large_icon_height"
+                android:layout_width="100dp"
+                android:background="@drawable/wicon" />
+
+            <Button
+                android:id="@+id/stopbutton"
+                android:layout_weight="1"
+                android:background="@drawable/go"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

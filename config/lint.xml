@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+
+    <!-- App Indexing（ディープリング対応）は対象外 -->
+    <issue id="GoogleAppIndexingWarning" severity="ignore" />
+
+    <!-- GradleDependency ライブラリが最新バージョンでなくてもエラーとはしない.-->
+    <issue id="GradleDependency" severity="ignore" />
+
+</lint>

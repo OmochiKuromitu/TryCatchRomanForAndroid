@@ -1,0 +1,4 @@
+<!-- 翻訳を行わないテキスト群 -->
+<resources>
+    <string name="app_name" translatable="false">Template</string>
+</resources>
