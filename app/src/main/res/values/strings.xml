@@ -1,4 +1,21 @@
 <resources>
     <!-- メッセージ定義（LM:Localizable Message） -->
     <string name="LM0001">Hello World!</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="LL0001">通信中</string>
+    <string name="operation_camera" translatable="false">カメラ</string>
+    <string name="permission_message">パーミッションたりないっす</string>
+    <string name="permission_message_button_ok">OK</string>
+    <string name="permission_message_button_no">NO</string>
+    <string name="operation_or_permission_error_message_is_contract" translatable="false">カメラ権限ください</string>
+
 </resources>

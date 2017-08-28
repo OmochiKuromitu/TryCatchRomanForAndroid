@@ -11,9 +11,9 @@ apply plugin: 'pmd'
 
 android {
     /* ------ コンパイル時に利用するSDKバージョン ------ */
-    compileSdkVersion 23
+    compileSdkVersion 25
     /* ------ ビルドツールバージョン ------ */
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '25.0.1'
 
     /* -------------------------------------------------
      * アプリ 設定
@@ -22,7 +22,7 @@ android {
     defaultConfig {
         applicationId "jp.co.fake.TryCatchRoman"
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -193,17 +193,21 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    testCompile 'junit:junit:4.12'
-
-    compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
     /* ------ 静的解析 ------ */
     // CheckStytle
-    checkstyle 'com.puppycrawl.tools:checkstyle:6.19'
     // findbugs
-    findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     // PMD
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.android.support:support-v4:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    checkstyle 'com.puppycrawl.tools:checkstyle:6.19'
+    findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     pmd 'net.sourceforge.pmd:pmd-java:5.4.2'
+    provided 'org.projectlombok:lombok:1.16.18'
 }

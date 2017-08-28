@@ -1,4 +1,4 @@
-package jp.co.fake.TryCatchRoman.presentation.view.main;
+package jp.co.fake.TryCatchRoman.presentation.view.myroom;
 
 import android.Manifest;
 import android.content.Intent;
